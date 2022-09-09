@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/grid_item"
+        android:title="@string/grid_layout" />
+
+    <item
+        android:id="@+id/linear_item"
+        android:title="@string/linear_layout" />
+
+    <item
+        android:id="@+id/st_grid_item"
+        android:title="@string/st_grid_layout" />
+
+    <item
+        android:id="@+id/toggle_favorites"
+        android:title="@string/toggle_favorites" />
+
+    <item
+        android:id="@+id/sign_out_item"
+        android:title="@string/sign_out" />
+</menu>

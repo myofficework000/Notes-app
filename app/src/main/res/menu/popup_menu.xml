@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/mango"
+        android:title="Quick Add" />
+    <item
+        android:id="@+id/apple"
+        android:title="Apple" />
+    <item
+        android:id="@+id/strawberry"
+        android:title="Strawberry" />
+    <item
+        android:id="@+id/banana"
+        android:title="Banana" />
+    <item
+        android:id="@+id/mac"
+        android:title="Macaroni" />
+</menu>

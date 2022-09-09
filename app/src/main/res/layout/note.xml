@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_width="@dimen/_155dp"
+    android:layout_height="@dimen/_200dp"
+    android:layout_margin="@dimen/_10dp"
+    android:padding="@dimen/_10dp"
+    app:cardBackgroundColor="@color/blueish_idk"
+    app:cardCornerRadius="@dimen/_10dp"
+    app:cardElevation="@dimen/_10dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/c_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/note_card_color_selector">
+
+        <ImageButton
+            android:id="@+id/star_icon"
+            android:layout_width="@dimen/note_icon_width"
+            android:layout_height="@dimen/note_icon_height"
+            android:layout_marginStart="@dimen/note_margin"
+            android:layout_marginTop="@dimen/note_margin"
+            android:background="@color/transparent_bg_color"
+            android:contentDescription="@string/starred_note_descr"
+            android:src="@drawable/star_selector"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/lock_icon"
+            android:layout_width="@dimen/note_icon_width"
+            android:layout_height="@dimen/note_icon_height"
+            android:layout_marginTop="@dimen/note_margin"
+            android:layout_marginEnd="@dimen/note_margin"
+            android:background="@color/transparent_bg_color"
+            android:contentDescription="@string/locked_note_descr"
+            android:src="@drawable/lock_selector"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/noteTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="3"
+            android:textColor="@color/white"
+            android:textSize="@dimen/note_title_size"
+            android:layout_marginStart="@dimen/_5dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Note Title" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/note_margin"
+            android:text="@string/example_date"
+            android:textColor="@color/white"
+            android:textSize="@dimen/date_text_size"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

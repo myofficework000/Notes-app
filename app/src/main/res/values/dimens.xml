@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="date_text_size">18sp</dimen>
+    <dimen name="note_margin">5dp</dimen>
+    <dimen name="note_icon_width">30dp</dimen>
+    <dimen name="note_icon_height">30dp</dimen>
+    <dimen name="note_title_size">30sp</dimen>
+    <dimen name="_60dp">60dp</dimen>
+    <dimen name="_1dp">1dp</dimen>
+    <dimen name="_10dp">10dp</dimen>
+    <dimen name="_155dp">155dp</dimen>
+    <dimen name="_200dp">200dp</dimen>
+    <dimen name="_16dp">16dp</dimen>
+    <dimen name="_25dp">25dp</dimen>
+    <dimen name="_5dp">5dp</dimen>
+    <dimen name="_40dp">40dp</dimen>
+    <dimen name="_20sp">20sp</dimen>
+    <dimen name="_300dp">300dp</dimen>
+    <dimen name="app_name_text_size">40sp</dimen>
+    <dimen name="_0dp">0dp</dimen>
+    <dimen name="_16dp_neg">0dp</dimen>
+    <dimen name="_250dp">250dp</dimen>
+    <dimen name="_18sp">18sp</dimen>
+    <dimen name="_20dp">20dp</dimen>
+    <dimen name="_25sp">25sp</dimen>
+</resources>

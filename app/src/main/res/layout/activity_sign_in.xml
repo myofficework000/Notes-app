@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_300dp"
+    android:layout_gravity="center"
+    tools:context=".auth_activities.SignInActivity">
+
+
+<!--    <EditText-->
+<!--        android:id="@+id/email_et_signIn"-->
+<!--        android:layout_width="@dimen/_300dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="@dimen/_10dp"-->
+<!--        android:autofillHints=""-->
+<!--        android:backgroundTint="@color/blueish_idk"-->
+<!--        android:hint="@string/email"-->
+<!--        android:inputType="textEmailAddress"-->
+<!--        app:layout_constraintBottom_toTopOf="@id/password_et_signIn"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/password_et_signIn"-->
+<!--        android:layout_width="@dimen/_300dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="@dimen/_10dp"-->
+<!--        android:autofillHints=""-->
+<!--        android:backgroundTint="@color/blueish_idk"-->
+<!--        android:hint="@string/password"-->
+<!--        android:inputType="textPassword"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/signInBTN"-->
+<!--        android:layout_width="@dimen/_300dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:backgroundTint="@color/blueish_idk"-->
+<!--        android:text="@string/sign_in"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/password_et_signIn"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent" />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

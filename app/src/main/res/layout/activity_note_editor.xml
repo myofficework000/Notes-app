@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".notes.NoteEditorActivity">
+
+
+    <ImageButton
+        android:id="@+id/color_lens"
+        android:layout_width="@dimen/_40dp"
+        android:layout_height="@dimen/_40dp"
+        android:layout_marginStart="@dimen/_10dp"
+        android:layout_marginTop="@dimen/_25dp"
+        android:backgroundTint="@color/transparent_bg_color"
+        android:clickable="true"
+        android:contentDescription="@string/color_lens"
+        android:focusable="true"
+        android:src="@drawable/color_lens_36"
+        app:layout_constraintEnd_toStartOf="@id/star_icon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/star_icon"
+        android:layout_width="@dimen/_40dp"
+        android:layout_height="@dimen/_40dp"
+        android:layout_marginTop="@dimen/_25dp"
+        android:backgroundTint="@color/transparent_bg_color"
+        android:clickable="true"
+        android:contentDescription="@string/star"
+        android:focusable="true"
+        android:src="@drawable/star_icon_36"
+        app:layout_constraintEnd_toEndOf="@id/lock_icon"
+        app:layout_constraintStart_toStartOf="@id/color_lens"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/lock_icon"
+        android:layout_width="@dimen/_40dp"
+        android:layout_height="@dimen/_40dp"
+        android:layout_marginTop="@dimen/_25dp"
+        android:backgroundTint="@color/transparent_bg_color"
+        android:clickable="true"
+        android:contentDescription="@string/lock"
+        android:focusable="true"
+        android:src="@drawable/unlock_36"
+        app:layout_constraintEnd_toStartOf="@id/guideline_50"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/abc_icon"
+        android:layout_width="@dimen/_40dp"
+        android:layout_height="@dimen/_40dp"
+        android:layout_marginTop="@dimen/_25dp"
+        android:backgroundTint="@color/transparent_bg_color"
+        android:clickable="true"
+        android:contentDescription="@string/increase_text_size"
+        android:focusable="true"
+        android:src="@drawable/abc_36"
+        app:layout_constraintEnd_toStartOf="@id/save_icon"
+        app:layout_constraintStart_toEndOf="@id/guideline_50"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/save_icon"
+        android:layout_width="@dimen/_40dp"
+        android:layout_height="@dimen/_40dp"
+        android:layout_marginTop="@dimen/_25dp"
+        android:backgroundTint="@color/transparent_bg_color"
+        android:clickable="true"
+        android:contentDescription="@string/save"
+        android:focusable="true"
+        android:src="@drawable/save_36"
+        app:layout_constraintEnd_toStartOf="@id/clear_icon"
+        app:layout_constraintStart_toEndOf="@id/abc_icon"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/clear_icon"
+        android:layout_width="@dimen/_40dp"
+        android:layout_height="@dimen/_40dp"
+        android:layout_marginTop="@dimen/_25dp"
+        android:layout_marginEnd="@dimen/_10dp"
+        android:backgroundTint="@color/transparent_bg_color"
+        android:clickable="true"
+        android:contentDescription="@string/delete"
+        android:focusable="true"
+        android:src="@drawable/delete_36"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/save_icon"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:maxLines="3"
+        android:id="@+id/title_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5dp"
+        android:autofillHints=""
+        android:hint="@string/note_title"
+        android:inputType="textMultiLine"
+        android:padding="@dimen/_25dp"
+        android:textColor="@color/blueish_idk"
+        android:textSize="@dimen/_20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/color_lens" />
+
+    <EditText
+        android:id="@+id/bodyET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5dp"
+        android:autofillHints=""
+        android:hint="@string/body"
+        android:inputType="textMultiLine"
+        android:maxLines="25"
+        android:padding="@dimen/_25dp"
+        android:textColor="@color/blueish_idk"
+        android:textSize="@dimen/_20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title_et" />
+
+    <TextView
+        android:id="@+id/date_modified"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_10dp"
+        android:textColor="@color/blueish_idk"
+        android:textSize="@dimen/_20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.50121653" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
